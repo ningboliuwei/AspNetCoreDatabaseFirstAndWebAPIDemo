@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDatabseFirstAndWebAPIDemo", "AspNetCoreDatabseFirstAndWebAPIDemo\AspNetCoreDatabseFirstAndWebAPIDemo.csproj", "{FB210747-D294-42D9-86B5-8412AD72AF44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDatabaseFirstAndWebAPIDemo", "AspNetCoreDatabaseFirstAndWebAPIDemo\AspNetCoreDatabaseFirstAndWebAPIDemo.csproj", "{FA2CA8BD-01B5-43E2-99BE-AA64C3B4ADFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FB210747-D294-42D9-86B5-8412AD72AF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB210747-D294-42D9-86B5-8412AD72AF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB210747-D294-42D9-86B5-8412AD72AF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB210747-D294-42D9-86B5-8412AD72AF44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2CA8BD-01B5-43E2-99BE-AA64C3B4ADFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2CA8BD-01B5-43E2-99BE-AA64C3B4ADFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2CA8BD-01B5-43E2-99BE-AA64C3B4ADFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2CA8BD-01B5-43E2-99BE-AA64C3B4ADFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20180320133911_InitialCreate.cs" />
+    <Compile Remove="Migrations\20180320133911_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20180321023738_second.cs" />
+    <Compile Remove="Migrations\20180321023738_second.Designer.cs" />
+    <Compile Remove="Migrations\20180321032040_changenames.cs" />
+    <Compile Remove="Migrations\20180321032040_changenames.Designer.cs" />
+    <Compile Remove="Migrations\20180321043019_initial_create.cs" />
+    <Compile Remove="Migrations\20180321043019_initial_create.Designer.cs" />
+    <Compile Remove="Migrations\20180321043334_addpassword.cs" />
+    <Compile Remove="Migrations\20180321043334_addpassword.Designer.cs" />
+    <Compile Remove="Migrations\20180321044321_init.cs" />
+    <Compile Remove="Migrations\20180321044321_init.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.0.1" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Microsoft.NETCore.App" Version="2.0.6" />
+  </ItemGroup>
+</Project>
