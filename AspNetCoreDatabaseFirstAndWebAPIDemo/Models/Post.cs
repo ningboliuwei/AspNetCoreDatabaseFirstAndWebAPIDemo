@@ -8,11 +8,8 @@ namespace AspNetCoreDatabseFirstAndWebAPIDemo.models
     public partial class Post
     {
         public int PostId { get; set; }
-        public int BlogId { get; set; }
-        public string Conent { get; set; }
-        public string Title { get; set; }
+        public string Content { get; set; }
         public string Author { get; set; }
-
-        public Blog PostNavigation { get; set; }
+        public DateTime PublishTime { get; set; }
     }
 }
