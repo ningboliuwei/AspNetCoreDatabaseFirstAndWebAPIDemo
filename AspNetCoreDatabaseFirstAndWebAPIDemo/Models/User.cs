@@ -12,6 +12,5 @@ namespace AspNetCoreDatabseFirstAndWebAPIDemo.models
         public string Password { get; set; }
         public string Realname { get; set; }
         public DateTime Birthday { get; set; }
-        public string Sex { get; set; }
     }
 }
