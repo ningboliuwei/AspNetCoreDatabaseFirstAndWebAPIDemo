@@ -1,15 +1,26 @@
 <template>
   <div id="app">
-    <v-HelloWorld></v-HelloWorld>
+    <el-container>
+<el-header><header-ly></header-ly></el-header>
+<el-main>
+   <transition name="el-zoom-in-center">
+  <router-view/></transition>
+</el-main>
+<el-footer><footer-ly></footer-ly></el-footer>
+    </el-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import HeaderLy from './components/header.vue'
+import FooterLy from './components/footer.vue'
 
 export default {
   name: 'App',
-  components: { 'v-HelloWorld': HelloWorld }
+  components: {
+    HeaderLy,
+    FooterLy
+  }
 }
 </script>
 
