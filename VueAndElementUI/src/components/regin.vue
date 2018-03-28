@@ -189,7 +189,8 @@ export default {
             // 让页面给个提示
             this.$message({type: 'success', message: '注册成功'})
 
-            let user = res.data
+            // 若返回的数据中 data: 后才是真实数据，则需要 .data.data
+            let user = res.data.data
             console.log(user)
             // 将返回的数据注入内存
             sessionStorage.setItem('user', JSON.stringify(user))

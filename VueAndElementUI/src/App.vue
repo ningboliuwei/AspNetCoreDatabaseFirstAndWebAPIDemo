@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <el-container>
-<el-header><header-ly></header-ly></el-header>
+<el-header><ly-header></ly-header></el-header>
 <el-main>
    <transition name="el-zoom-in-center">
   <router-view/></transition>
 </el-main>
-<el-footer><footer-ly></footer-ly></el-footer>
+<el-footer><ly-footer></ly-footer></el-footer>
     </el-container>
   </div>
 </template>
@@ -18,8 +18,8 @@ import FooterLy from './components/footer.vue'
 export default {
   name: 'App',
   components: {
-    HeaderLy,
-    FooterLy
+    'ly-header': HeaderLy,
+    'ly-footer': FooterLy
   }
 }
 </script>

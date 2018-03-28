@@ -5,7 +5,7 @@
    </el-col>
 <el-col :span="16">
       <el-menu
-        :default-active="activeIndex2"
+
         class="menu"
         router
         mode="horizontal"
