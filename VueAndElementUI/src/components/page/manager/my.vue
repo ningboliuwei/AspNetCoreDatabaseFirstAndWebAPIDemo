@@ -15,7 +15,7 @@ export default {
     if (user) {
       console.log(user)
       user = JSON.parse(user)
-      this.username = user.name
+      this.username = user.username
     }
   }
 }
