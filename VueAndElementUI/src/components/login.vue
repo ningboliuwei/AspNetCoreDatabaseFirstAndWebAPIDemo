@@ -70,10 +70,14 @@ export default {
               })
             } else {
               this.$message({
+
                 type: 'success'
               })
               // 将返回的数据注入 sessionStorage
               sessionStorage.setItem('user', JSON.stringify(user))
+              console.log(this.$store.state.isLoggedIn)
+              this.$store.dispatch('SignIn')
+              console.log(this.$store.state.isLoggedIn)
               // 跳转到我的信息的页面
               this.$router.push('/manager/my')
             }

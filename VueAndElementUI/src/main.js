@@ -8,10 +8,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 // 引入 vuex
 import Vuex from 'vuex'
-import store from './vuex/store'
-import axios from 'axios'
-
-axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+import store from './store/index'
 
 Vue.use(ElementUI)
 Vue.use(Vuex)

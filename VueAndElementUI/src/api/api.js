@@ -7,5 +7,6 @@ export const ReginUser = params => {
 
 // 登录接口
 export const LoginUser = params => {
+  console.log(params)
   return axios.post(`${base}/login`, params)
 }
