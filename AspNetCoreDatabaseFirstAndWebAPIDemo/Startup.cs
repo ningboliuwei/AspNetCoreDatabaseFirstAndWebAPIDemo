@@ -28,6 +28,7 @@ namespace AspNetCoreDatabseFirstAndWebAPIDemo
             services.AddMvc();
             services.AddDbContext<OrderingContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("OrderingDatabase")));
+        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +39,11 @@ namespace AspNetCoreDatabseFirstAndWebAPIDemo
                 app.UseDeveloperExceptionPage();
             }
 
+            // 下一行代码要写在 UseMvc 之前
+            app.UseCors(builder =>
+                builder.WithOrigins("http://localhost:8080"));
             app.UseMvc();
+        
         }
     }
 }

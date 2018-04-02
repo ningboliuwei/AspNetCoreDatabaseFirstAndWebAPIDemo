@@ -1,25 +1,42 @@
 <template>
   <div id="app">
-    <el-container>
-<el-header><ly-header></ly-header></el-header>
-<el-main>
-   <transition name="el-zoom-in-center">
-  <router-view/></transition>
-</el-main>
-<el-footer><ly-footer></ly-footer></el-footer>
-    </el-container>
-  </div>
+    <template>
+  <v-container grid-list-md text-xs-center>
+    <v-layout row wrap>
+      <v-flex xs12>
+       <template>
+  <v-data-table
+    :items="items"
+    hide-actions
+    class="elevation-1"
+  >
+    <template slot="items" slot-scope="props">
+      <td>{{ props.item.id }}</td>
+      <td class="text-xs-right">{{ props.item.categoryName }}</td>
+    </template>
+  </v-data-table>
+</template>
+      </v-flex>
+    </v-layout>
+  </v-container>
+</template>
+
+</div>
 </template>
 
 <script>
-import HeaderLy from './components/header.vue'
-import FooterLy from './components/footer.vue'
-
+import axios from 'axios'
 export default {
   name: 'App',
   components: {
-    'ly-header': HeaderLy,
-    'ly-footer': FooterLy
+  },
+  data: function () {
+    return { items: [] }
+  },
+  mounted: function () {
+    axios.get(`http://localhost:52139/api/categories`).then(result => {
+      this.items = result.data.data
+    })
   }
 }
 </script>

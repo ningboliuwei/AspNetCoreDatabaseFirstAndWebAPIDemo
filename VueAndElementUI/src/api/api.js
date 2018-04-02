@@ -1,12 +1,7 @@
 import axios from 'axios'
-let base = ' https://www.easy-mock.com/mock/5abb324dbd48f03d3743b5a5/Learning'
-// 注册接口
-export const ReginUser = params => {
-  return axios.post(`${base}/users`, params)
-}
+let base = 'http://localhost:52139/api'
 
-// 登录接口
-export const LoginUser = params => {
-  console.log(params)
-  return axios.post(`${base}/login`, params)
+// 获取菜品类别
+export const Categories = params => {
+  return axios.get(`${base}/categories`, params)
 }

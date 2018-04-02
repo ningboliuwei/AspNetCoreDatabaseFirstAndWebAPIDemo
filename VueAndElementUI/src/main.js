@@ -3,14 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-// 引入 element-ui 组件和 css
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+// 引入 vuetify 组件
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 // 引入 vuex
 import Vuex from 'vuex'
 import store from './store/index'
 
-Vue.use(ElementUI)
+Vue.use(Vuetify)
 Vue.use(Vuex)
 
 Vue.config.productionTip = false
