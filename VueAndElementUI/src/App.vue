@@ -3,9 +3,11 @@
     <template>
   <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
+    <v-btn small color="error">Error</v-btn>
       <v-flex xs12>
        <template>
   <v-data-table
+  :headers="headers"
     :items="items"
     hide-actions
     class="elevation-1"
@@ -25,18 +27,27 @@
 </template>
 
 <script>
-import axios from 'axios'
+import {getCategories} from './api/api'
 export default {
   name: 'App',
   components: {
   },
   data: function () {
-    return { items: [] }
+    return {
+      headers: [
+        {
+          text: '菜品类别 ID',
+          align: 'left',
+          sortable: false,
+          value: 'id'
+        },
+        { text: '菜品类别', value: 'categoryName' }
+      ],
+      items: [] }
   },
-  mounted: function () {
-    axios.get(`http://localhost:52139/api/categories`).then(result => {
-      this.items = result.data.data
-    })
+  mounted: async function () {
+    const result = await getCategories({})
+    this.items = result.data.data
   }
 }
 </script>
